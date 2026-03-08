@@ -1,0 +1,44 @@
+﻿CourseCode,Name,Type,Credit,Semester,Lecturer
+10123102,Programming Fundamentals,Sec,3(2-2),1,SPN
+10123103,Algorithms and Data Structure,Sec,3(2-2),2,PRUKS
+10123131,Software Development Pratice I,Lab,3(0-6),3,SPN
+10123131,Software Development Pratice I,Lab,3(0-6),3,RSP
+10123132,Software Development Practice II,Lab,3(0-6),4,YYN
+10123132,Software Development Practice II,Lab,3(0-6),4,SPN
+10123136,Analysis and Design of Algorithm,Sec,3(0-6),5,NCC
+10123117,Operating Systems,Sec,3(3-0),6,SRU
+10113030,Introduction to Engineering,Sec,1(1-0),1,NCC
+10113138,Circuits and Electronics,Sec,3(3-0),2,YYN
+10123116,Software Engineering,Sec,3(3-0),5,TNN
+10123120,Embedded System Design Laboratory,Lab,3(3-0),6,DNA
+10123120,Embedded System Design Laboratory,Lab,3(3-0),6,PRUKS
+10123229,Machine Learning,Sec,3(3-0),8,VERAS
+10123107,Logic Design of Digital Systems,Sec,3(3-0),3,DNA
+10123121,Database Systems,Sec,3(3-0),4,SPN
+10113139,Circuits and Electronics Lab,Lab,1(0-3),2,RSP
+10113139,Circuits and Electronics Lab,Lab,1(0-3),2,DNA
+10123124,Computer Engineering Seminar,Sec,2(1-2),6,STN
+10123124,Computer Engineering Seminar,Sec,2(1-2),6,DNA
+10123108,Digital System Design Laboratory,Lab,1(0-3),3,DNA
+10123108,Digital System Design Laboratory,Lab,1(0-3),3,NNS
+10123108,Digital System Design Laboratory,Lab,1(0-3),3,DNA
+10123108,Digital System Design Laboratory,Lab,1(0-3),3,PRUKS
+10123134,Computer Organization,Sec,3(3-0),4,DNA
+10123119,Embedded System Design,Sec,3(3-0),5,YYN
+10123137,Information and Network Security,Sec,3(3-0),6,NNS
+10123133,Descrete Mathematics,Sec,3(3-0),3,NCC
+10123128,Computer Networks Laboratory,Lab,1(0-3),5,NNS
+10123128,Computer Networks Laboratory,Lab,1(0-3),5,NNS
+10123213,Artificial Intelligence,Sec,3(3-0),6,NCC
+10123118,Computer Networks,Sec,3(3-0),4,NNS
+10123106,Introduction to Signals and Systems,Sec,3(3-0),3,RSP
+10123210,Image Processing and Machine Vision,Sec,3(3-0),5,VERAS
+10123226,Linux Operating System and Administration,Sec,3(3-0),6,NNS
+10123135,Linear Algebra,Sec,3(3-0),4,NCC
+10123105,Statistics for Computer Engineering,Sec,3(3-0),3,VERAS
+10123211,Simulation and Modeling,Sec,3(3-0),5,YYN
+10123217,Selected Topics in Computer Engineering I (Blockchain),Sec,3(3-0),5,SPN
+10123218,Selected Topics in Computer Engineering II (AI and Digital Twins),Sec,3(3-0),5,PRUKS
+10123301,Pre Co-operative Education,Sec,2(2-0),6,DNA
+10123301,Pre Co-operative Education,Sec,2(2-0),6,YYN
+10123219,Selected Topics in Computer Engineering II (Cloud Networks and Computing),Sec,3(3-0),6,PRUKS
