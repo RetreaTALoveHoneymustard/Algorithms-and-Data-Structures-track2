@@ -1,7 +1,6 @@
 import pandas as pd
 import re
 
-
 class Lecturer:
     def __init__(self, name):
         self.name = name
@@ -51,9 +50,43 @@ class FacultyManager:
                 self.course_catalog[code] = Course(code, course_name, credit_value , set()) #intial course_catalog with Course Class
             self.course_catalog[code].lecturer.add(name) #handle 1 to many lecturer
 
+    def find_course(self, course_code):
+      print(">> find_course", course_code)
+
+      if course_code in self.course_catalog:
+        course = self.course_catalog[course_code]
+        lecturers = ', '.join(course.lecturer)
+
+        print(f'Course Name: {course.name}')
+        print(f'Credit: {course.credits}')
+        print(f'Lecturer: {lecturers}')
+
+      else:
+        print(f'Course with code {course_code} not found.')
+
+
+    def report_load(self):
+      print(">> report_load")
+      for name in (self.lecturer_map.keys()):
+        lec_obj = self.lecturer_map[name]
+        print(f'Lecturer : {lec_obj.name} | Total Load: {lec_obj.total_load}')
+
 if __name__ == "__main__":
-    engine = FacultyManager('algoworks.csv')
-    print(engine.course_catalog)
-    print(engine.lecturer_map)
+    url = "https://raw.githubusercontent.com/RetreaTALoveHoneymustard/Algorithms-and-Data-Structures-track2/main/algoworks.csv"
+    try:
+      engine = FacultyManager(url)
+      print("Successfully Execute")
+      try:
+        print(engine.course_catalog)
+        print(engine.lecturer_map)
+        print("Data ready to use")
+      except Exception as e:
+        print("Something not right")
+    except Exception as e:
+      print("Error Occur")
 
     print("-" * 30)
+    code = input("Enter Course Code : ")
+    engine.find_course(code)
+    print("-" * 30)
+    engine.report_load()
