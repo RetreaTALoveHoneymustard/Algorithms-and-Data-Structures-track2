@@ -1,5 +1,4 @@
 import pandas as pd
-import re
 
 class Lecturer:
     def __init__(self, name):
@@ -30,8 +29,14 @@ class FacultyManager:
         self._load_data(csv_file) # Hash Function collect keys and elements
 
     def _strip_credit(self, credit_str):
-        match = re.match(r'(\d+)', str(credit_str))
-        return int(match.group(1)) if match else 0 #handling credits Ex.separate 3 from 3(2-2)
+        s = str(credit_str)
+        num = ""
+        for ch in s:
+            if ch.isdigit():
+                num += ch
+            else:
+                break
+        return int(num) if num else 0 #handling credits Ex.separate 3 from 3(2-2)
 
     def _load_data(self, csv_file):
         df = pd.read_csv(csv_file)
