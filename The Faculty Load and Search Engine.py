@@ -30,13 +30,13 @@ class FacultyManager:
 
     def _strip_credit(self, credit_str):
         s = str(credit_str)
-        num = ""
+        digits = []
         for ch in s:
-            if ch.isdigit():
-                num += ch
-            else:
-                break
-        return int(num) if num else 0 #handling credits Ex.separate 3 from 3(2-2)
+          if ch.isdigit():
+              digits.append(ch)
+          else:
+              break
+        return int(''.join(digits)) if digits else 0 #handling credits Ex.separate 3 from 3(2-2)
 
     def _load_data(self, csv_file):
         df = pd.read_csv(csv_file)
